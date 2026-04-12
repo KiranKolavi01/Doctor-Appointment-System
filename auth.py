@@ -3,8 +3,8 @@ import uuid
 from datetime import datetime
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
-from .database import get_db_connection
-from .models import SignupRequest, SigninRequest
+from database import get_db_connection
+from models import SignupRequest, SigninRequest
 
 router = APIRouter(prefix="/auth")
 

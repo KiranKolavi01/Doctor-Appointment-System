@@ -5,9 +5,9 @@ from fastapi import FastAPI, Header, HTTPException, Request, Depends
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from .database import get_db_connection
-from .auth import router as auth_router
-from .models import (
+from database import get_db_connection
+from auth import router as auth_router
+from models import (
     DoctorCreate, DoctorUpdate, ShiftCreate, SlotGenerate,
     StatusUpdate, PrescriptionCreate, VideoLinkUpdate, AppointmentBook
 )
